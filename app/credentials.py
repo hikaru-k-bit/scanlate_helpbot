@@ -11,7 +11,7 @@ bot = Bot(token=os.environ.get("TOKEN"))
 
 async def connect():
     """
-    :return:
+    :return: None
     """
     pool = await aiomysql.create_pool(
         host=os.environ.get("HOST"),

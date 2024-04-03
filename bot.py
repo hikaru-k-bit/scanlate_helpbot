@@ -12,9 +12,7 @@ dp = Dispatcher()
 
 async def main() -> None:
     """
-    Main function to start the bot's dispatcher and polling.
-
-    This function includes routers and starts polling for incoming updates from users.
+    :return: None
     """
     dp.include_routers(router, app.states.projecting.router)
     await dp.start_polling(bot)
